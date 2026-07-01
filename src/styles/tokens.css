@@ -1,0 +1,92 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  --bg: #f8f6ff;
+  --surface: #fff;
+  --text: #3d3658;
+  --muted: #9b93b8;
+  --p: #d4c8f8;
+  --pl: #f0ecff;
+  --pd: #a98be8;
+  --pa: #7c5cbf;
+
+  --r-sm: 12px;
+  --r-md: 16px;
+  --r-lg: 24px;
+
+  --sh-0: none;
+  --sh-1: 0 2px 8px rgba(120,90,200,.06);
+  --sh-2: 0 4px 20px rgba(120,90,200,.10);
+  --sh-3: 0 8px 32px rgba(120,90,200,.15);
+  --sh-4: 0 20px 60px rgba(120,90,200,.20);
+
+  --text-xs: 11px;
+  --text-sm: 13px;
+  --text-base: 15px;
+  --text-lg: 18px;
+  --text-xl: 22px;
+  --text-hero: 46px;
+
+  --t-fast: .15s ease;
+  --t-base: .25s ease;
+  --t-slow: .4s cubic-bezier(.34,1.56,.64,1);
+
+  --color-bg: #f8f6ff;
+  --color-surface: #fff;
+  --color-text: #3d3658;
+  --color-muted: #9b93b8;
+  --color-p: #d4c8f8;
+  --color-pl: #f0ecff;
+  --color-pd: #a98be8;
+  --color-pa: #7c5cbf;
+}
+
+[data-theme="dark"] {
+  --bg: #1a1a2e;
+  --surface: #16213e;
+  --text: #e4e0f0;
+  --muted: #8a84a0;
+  --p: #6a5a9a;
+  --pl: #2a2050;
+  --pd: #a98be8;
+  --pa: #c4b0f0;
+  --sh-1: 0 2px 8px rgba(0,0,0,.3);
+  --sh-2: 0 4px 20px rgba(0,0,0,.4);
+  --sh-3: 0 8px 32px rgba(0,0,0,.5);
+  --sh-4: 0 20px 60px rgba(0,0,0,.6);
+}
+
+html, body {
+  height: 100%;
+  background: var(--bg);
+  font-family: 'Nunito', -apple-system, 'Segoe UI', sans-serif;
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  color: var(--text);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--p);
+  border-radius: 99px;
+}

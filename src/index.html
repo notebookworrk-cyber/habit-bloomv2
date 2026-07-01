@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="theme-color" content="#f0ecff"/>
+<meta name="description" content="HabitBloom — Your premium habit tracking companion"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<link rel="manifest" href="/manifest.json"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" media="print" onload="this.media='all'"/>
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,600&display=swap"/></noscript>
+<link rel="stylesheet" href="/styles/tokens.css"/>
+<link rel="stylesheet" href="/styles/layout.css"/>
+<link rel="stylesheet" href="/styles/components.css"/>
+<link rel="stylesheet" href="/styles/animations.css"/>
+<title>HabitBloom 🌸</title>
+</head>
+<body>
+<div id="app">
+  <div id="page"></div>
+  <nav id="nav">
+    <button class="nav-btn active" data-tab="home">    <span class="nav-icon">🏡</span><span class="nav-label">Home</span></button>
+    <button class="nav-btn"        data-tab="habits">  <span class="nav-icon">✅</span><span class="nav-label">Habits</span></button>
+    <button class="nav-btn"        data-tab="planner"> <span class="nav-icon">📅</span><span class="nav-label">Planner</span></button>
+    <button class="nav-btn"        data-tab="timer">   <span class="nav-icon">⏱️</span><span class="nav-label">Timer</span></button>
+    <button class="nav-btn"        data-tab="stats">   <span class="nav-icon">📊</span><span class="nav-label">Stats</span></button>
+    <button class="nav-btn"        data-tab="settings"><span class="nav-icon">⚙️</span><span class="nav-label">Me</span></button>
+  </nav>
+</div>
+<div id="cat-companion" title="Tap to say hi!">
+  <div class="cat-bubble" id="cat-bubble" style="display:none"></div>
+  <div class="cat-frame state-neutral" id="cat-frame">
+    <svg id="cat-img-happy" class="cat-active" viewBox="0 0 100 100" width="72" height="72" style="position:absolute;top:0;left:0;opacity:0;pointer-events:none;transition:opacity .4s">
+      <circle cx="50" cy="50" r="45" fill="#f0ecff" stroke="#d4c8f8" stroke-width="2"/>
+      <text x="50" y="60" font-size="40" text-anchor="middle">😸</text>
+    </svg>
+    <svg id="cat-img-sleeping" viewBox="0 0 100 100" width="72" height="72" style="position:absolute;top:0;left:0;opacity:0;pointer-events:none;transition:opacity .4s">
+      <circle cx="50" cy="50" r="45" fill="#f0ecff" stroke="#d4c8f8" stroke-width="2"/>
+      <text x="50" y="60" font-size="40" text-anchor="middle">😴</text>
+    </svg>
+    <svg id="cat-img-reading" viewBox="0 0 100 100" width="72" height="72" style="position:absolute;top:0;left:0;opacity:0;pointer-events:none;transition:opacity .4s">
+      <circle cx="50" cy="50" r="45" fill="#f0ecff" stroke="#d4c8f8" stroke-width="2"/>
+      <text x="50" y="60" font-size="40" text-anchor="middle">📖</text>
+    </svg>
+    <svg id="cat-img-neutral" class="cat-active" viewBox="0 0 100 100" width="72" height="72" style="position:absolute;top:0;left:0;opacity:0;pointer-events:none;transition:opacity .4s">
+      <circle cx="50" cy="50" r="45" fill="#f0ecff" stroke="#d4c8f8" stroke-width="2"/>
+      <text x="50" y="60" font-size="40" text-anchor="middle">🐱</text>
+    </svg>
+  </div>
+</div>
+<script type="module" src="/js/app.js"></script>
+</body>
+</html>
